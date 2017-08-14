@@ -1,0 +1,24 @@
+<div class="form-group">
+        <h2>Simple multiple Upload</h2>
+        <!-- {!! Form::open(array('url'=>'uploadFiles','method'=>'POST', 'files'=>true))!!}
+          {!! Form::label('tourist_type', 'نوع السياحه :') !!}
+          {!! Form::select('tourist_type' , array('') )!!}
+          <p>{!! $errors->first('images')!!}</p>
+          @if(Session::has('error'))
+            <p>{!! Session::get('error') !!}</p>
+          @endif
+          {!! Form::submit('Submit', array('class'=>'btn btn-lg btn-primary col-md-4'))!!}
+        {!! Form::close()!!} -->
+        <form class="" action="storecity" method="post">
+           {{csrf_field()}}
+          <select class="" name="ty">
+
+            <option value="1">داخليه</option>
+            <option value="2">خارجيه</option>
+            <option value="1">داخليه</option>
+            <option value="2">خارجيه</option>
+          </select>
+          <input type="text" name="cityname">
+          <input type="submit" name="" value="SAVE">
+        </form>
+      </div>

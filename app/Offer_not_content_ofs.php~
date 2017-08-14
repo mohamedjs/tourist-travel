@@ -1,0 +1,10 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Offer_not_content_ofs extends Model
+{
+    //
+}
